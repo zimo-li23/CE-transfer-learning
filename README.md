@@ -20,6 +20,20 @@ The basic environment is PyTorch, and CUDA for GPU machines.
 
 **Workflow:**
 
-Use structure_stat.py to statistically analyze structural information from the POSCARs. This file can be run directly. The obtained occupantion probabilities for FCC and BCC are stored separately in fcc_train.csv and bcc_train.csv.
+First use structure_stat.py to statistically analyze structural information from the POSCARs. This file can be run directly. The obtained occupantion probabilities for FCC and BCC are stored separately in fcc_train.csv and bcc_train.csv.
 
-Use main.py to train Scratch and Scratch′ models.
+Use main.py to train Scratch and Scratch′ models. This file can be run directly.
+
+Reference values for the accuracy of Scratch models: 
+
+Train: R2: 0.9576119015725071, loss: 0.042388
+
+Test: R2: 0.910952639191531, loss: 0.051504
+
+Use main_transfer.py to train DA and TL models. This file can be run directly.
+
+Reference values for the accuracy of TL models:
+
+Train: R2: 0.9501818692776184, loss: 0.049818
+
+Test: R2: 0.9466268808883479, loss: 0.030870
