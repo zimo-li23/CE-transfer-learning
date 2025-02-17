@@ -4,11 +4,22 @@ We propose a deep learning framework that combines transfer learning with cluste
 **Documents:** 
 
 The folder HEA_data contains all the HEA data used to train the model.
+
 structure_stat.py is used to statistically analyze structural information to obtain atomic occupantion probabilities. 
+
 generate.py is used to generate new samples by cluster expansion.
+
 main.py is used to train Scratch and Scratch′ models.
+
 main_transfer.py is used to train DA and TL models.
+
 common.py contains the network structures of machine learning models and defines the generic functions.
 
 **Environment Requirements:**
-The basic environment is the PyTorch, and CUDA for GPU machines.
+The basic environment is PyTorch, and CUDA for GPU machines.
+
+**Workflow:**
+
+Use structure_stat.py to statistically analyze structural information from the POSCARs. This file can be run directly. The obtained occupantion probabilities for FCC and BCC are stored separately in fcc_train.csv and bcc_train.csv.
+
+Use main.py to train Scratch and Scratch′ models.
