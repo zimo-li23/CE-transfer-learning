@@ -144,8 +144,8 @@ if __name__ == '__main__':
     torch.manual_seed(init_seed)
     torch.cuda.manual_seed(init_seed)
     torch.cuda.manual_seed_all(init_seed)
-    torch.backends.cudnn.benchmark = False
-    torch.backends.cudnn.deterministic = True
+    # torch.backends.cudnn.benchmark = False
+    # torch.backends.cudnn.deterministic = True
     X_train, X_test = {}, {}
     y_train, y_test = {}, {}
     X_source, y_source = {}, {}
@@ -226,8 +226,8 @@ if __name__ == '__main__':
     torch.manual_seed(init_seed)
     torch.cuda.manual_seed(init_seed)
     torch.cuda.manual_seed_all(init_seed)
-    torch.backends.cudnn.benchmark = False
-    torch.backends.cudnn.deterministic = True        
+    # torch.backends.cudnn.benchmark = False
+    # torch.backends.cudnn.deterministic = True        
     model.load_state_dict(torch.load("model_source.pth"))
     if not is_TL:
         print("Train: ", end = '')

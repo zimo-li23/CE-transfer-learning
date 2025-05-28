@@ -48,8 +48,8 @@ if __name__ == '__main__':
     torch.manual_seed(init_seed)
     torch.cuda.manual_seed(init_seed)
     torch.cuda.manual_seed_all(init_seed)
-    torch.backends.cudnn.benchmark = False
-    torch.backends.cudnn.deterministic = True
+    # torch.backends.cudnn.benchmark = False
+    # torch.backends.cudnn.deterministic = True
 
     for phase in ['fcc', 'bcc']:
         if is_qui:
