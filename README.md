@@ -34,6 +34,6 @@ Use main_transfer.py to train DA and TL models. This file can be run directly.
 
 Reference values for the accuracy of TL models:
 
-Train: R2: 0.9501818692776184, loss: 0.049818
+Train: R2: 0.9556474378052326, loss: 0.044353
 
-Test: R2: 0.9466268808883479, loss: 0.030870
+Test: R2: 0.9429249203060516, loss: 0.033012
